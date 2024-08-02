@@ -1,0 +1,99 @@
+.image{
+    height:30vh;
+    width:30vw;
+}
+#menu{
+    padding: 25px 0 25px 0;
+}
+#section{
+    padding: 25px 0 25px 0;
+    text-align:center;
+    font-size: 2rem;
+    font-family: Verdana;
+}
+#menu_row{
+    display: flex;
+    padding:0 100px 0 100px;
+}
+#menu_col{
+    box-shadow: 2px 2px 2px #bbb;
+    border:1px solid #bbb;
+    background-color: #fff;
+    margin:10px;
+    padding: 10px;
+    flex: 1;
+}
+#menu_col h2{
+    background-color: red;
+    color: #fff;
+    text-align:center;
+    padding:5px;
+    font-family: cursive;
+}
+#image{
+    width: 150px;
+    height:150px;
+    border-radius: 50;
+    padding: 5px;
+    border:2px solid orange;
+}
+#image img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:2px solid orange;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+.button5{
+   background-color: orange;
+   border-radius: 50px;
+   color:white;
+   border-width:20px;
+   font-size:10px;
+}
+.links1{
+    color:white;
+}
+.links2{
+    color: black;
+}
+.links4{
+    color: blue;
+}
+@media screen and (min-width:320px) {
+    body{
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+}
+/* Tablet,ipad */
+@media Screen and (min-width:768px) and (max-width:1024px){
+    body{
+        background-color: #DCD9D4;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+        background-blend-mode: soft-light,screen;
+    }
+}
+/* Desktops and Laptops */
+@media Screen and (min-width:1224px) {
+    body{
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+}
+/* Large Screens-------*/
+@media Screen and(min-width:1824px){
+  body{
+    background-color: rgb(101, 51, 208);
+  }
+}
+.card1{
+    background-image:url("index.jpg");
+    background-size: cover;
+
+}

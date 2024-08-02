@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1496412705862-e0088f16f791');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .menu-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .menu-item {
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-item-content {
+            padding: 1.5rem;
+        }
+        .menu-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        .menu-item p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .menu-item .price {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+        }
+        nav{
+    background-color:rgb(9, 255, 214);
+    padding-top:50px;
+    padding-right:50px;
+    padding-bottom:50px;
+    padding-left:80px;
+    font-size:50px;
+}
+a{
+    text-decoration-line:none;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a  href="home.html"> Home   </a>&nbsp;
+        <a   href="about.html"> About </a>&nbsp;
+        <a   href="contact.html"> Contact Us  </a>&nbsp;
+        <a   href="menu.html"> Menu </a>&nbsp;
+        <a   href="orders.html"> Orders  </a>&nbsp;
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Gourmet Haven</h1>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Menu</h2>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Discover Our Flavors</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="butter.jpg" alt="Butter Chicken">
+                    <div class="menu-item-content">
+                        <h3>Butter Chicken</h3>
+                        <p>Tender chicken in a rich, creamy tomato sauce.</p>
+                        <span class="price">₹350</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="paneer.jpg" alt="Paneer Tikka">
+                    <div class="menu-item-content">
+                        <h3>Paneer Tikka</h3>
+                        <p>Grilled cottage cheese cubes marinated in spices.</p>
+                        <span class="price">₹280</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="biryani.jpg" alt="Chicken Biryani">
+                    <div class="menu-item-content">
+                        <h3>Chicken Biryani</h3>
+                        <p>Fragrant rice dish with mixed vegetables and aromatic spices.</p>
+                        <span class="price">₹250</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="chmasala.jpg" alt="Chicken Tikka Masala">
+                    <div class="menu-item-content">
+                        <h3>Chicken Tikka Masala</h3>
+                        <p>Grilled chicken pieces in a spicy curry sauce.</p>
+                        <span class="price">₹380</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="palak.jpg" alt="Palak Paneer">
+                    <div class="menu-item-content">
+                        <h3>Palak Paneer</h3>
+                        <p>Cottage cheese cubes in a creamy spinach sauce.</p>
+                        <span class="price">₹300</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="gulabjam.jpg" alt="Gulab Jamun">
+                    <div class="menu-item-content">
+                        <h3>Gulab Jamun</h3>
+                        <p>Sweet milk-solid balls soaked in rose-scented syrup.</p>
+                        <span class="price">₹150</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
